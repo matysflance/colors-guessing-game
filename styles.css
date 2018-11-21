@@ -1,0 +1,107 @@
+body {
+    background-color: #E8EAF6;
+    padding: 0;
+    margin: 0;
+    font-family: 'Good Times', 'Verdana';
+}
+
+.container {
+    max-width: 780px;
+    margin: auto;
+}
+
+.header {
+    background-color: #3F51B5;
+    text-align: center;
+    padding: 2em 1em;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+h1 {
+    margin: 0;
+    font-size: calc(0.956vw + 13.5px);
+}
+
+.color-to-guess {
+    margin: 0;
+}
+
+.game-actions {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4);
+    font-size: 0.8em;
+    font-size: calc(0.20456vw + 9.5px);
+    letter-spacing: 1px;
+}
+
+.game-actions-box {
+    width: 33.3%;
+}
+
+.message {
+    align-self: center;
+    text-align: center;
+}
+
+button.selected {
+    background-color: #3F51B5;
+    color: white;
+}
+
+.reset-btn,
+.easy-btn,
+.medium-btn,
+.hard-btn {
+    letter-spacing: 1px;
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+    padding: 0.7em;
+    transition: all 0.1s;
+    background-color: white;
+}
+
+.reset-btn:hover,
+.easy-btn:hover,
+.medium-btn:hover,
+.hard-btn:hover {
+    background-color: #3F51B5;
+    color: white;
+}
+
+@media only screen and (max-width: 60em) {
+    .game-actions,
+    .reset-btn,
+    .easy-btn,
+    .medium-btn,
+    .hard-btn {
+        letter-spacing: 0;
+    }
+}
+
+.squares-container {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.square {
+    background-color: burlywood;
+    flex: 1 1 30%;
+    height: 0;
+    margin: 1%;
+    padding-bottom: 30%;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4);
+}
